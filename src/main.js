@@ -1,8 +1,14 @@
-import Vue from "vue";
-import App from "./App.vue";
+import VuePopperjs from "./VuePopperjs.vue";
 
-Vue.config.productionTip = false;
+const Plugin = {
+  install(Vue, options = {}) {
+    Vue.component(options.name || "vue-popperjs", VuePopperjs);
+  }
+};
 
-new Vue({
-  render: h => h(App)
-}).$mount("#app");
+if (typeof window !== "undefined" && window.Vue) {
+  window.Vue.use(Plugin);
+}
+
+export { VuePopperjs };
+export default Plugin;
