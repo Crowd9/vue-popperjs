@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div>
+      <img alt="Vue logo" src="./assets/logo.png" />
+    </div>
+
+    <vue-popperjs #default="{ reference, popper }">
+      <span v-bind="reference.attrs">
+        Popper will be positioned relative to me
+      </span>
+      <div v-bind="popper.attrs">
+        Popper 🚀
+      </div>
+    </vue-popperjs>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import VuePopperjs from "../src/VuePopperjs.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    VuePopperjs
   }
 };
 </script>

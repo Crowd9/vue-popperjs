@@ -1,6 +1,20 @@
 # vue-popperjs
+Vue wrapper around [Popper](https://popper.js.org/).
 
-## Project setup
+important note: Popper is not a tooltip library, it's a positioning engine to be used to build features such as (but not restricted to) tooltips.
+
+
+## Install
+via package managers
+
+```
+npm i vue-popperjs
+
+# With Yarn
+yarn add vue-popperjs
+```
+
+## Development setup
 ```
 yarn install
 ```
