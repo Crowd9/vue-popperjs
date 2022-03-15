@@ -14,7 +14,7 @@
   "dependencies": {
     "@popperjs/core": "^2.4.4",
     "core-js": "^3.6.5",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "vue": "^2.6.11"
   },
   "devDependencies": {
